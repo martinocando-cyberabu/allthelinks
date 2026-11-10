@@ -36,14 +36,16 @@
   /* ---------- Layout: left sidebar + content, like the Portfolio site ---------- */
   .layout {
     display: grid;
-    grid-template-columns: minmax(280px, 1fr) minmax(0, 800px) minmax(40px, 1fr);
-    column-gap: 60px;
+    grid-template-columns: 240px minmax(0, 800px);
+    justify-content: center;
+    column-gap: 80px;
+    padding: 0 40px;
     min-height: 100vh;
   }
   .sidebar {
     position: sticky; top: 0; align-self: start;
     max-height: 100vh; overflow-y: auto;
-    justify-self: end; width: 280px;
+    width: 240px;
     padding: 60px 0 40px;
   }
   .logo { display: inline-block; }
@@ -109,7 +111,7 @@
 
   /* ---------- Tablet / phone: logo on top, menu behind a button ---------- */
   @media (max-width: 900px) {
-    .layout { display: block; }
+    .layout { display: block; padding: 0; }
     .sidebar {
       position: static; max-height: none; overflow: visible; width: auto;
       padding: 24px 16px 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
@@ -146,12 +148,12 @@
       <a href="https://martinocando.com/purchasing-gear">Gear Buying Advice</a>
     </div>
     <div class="group">
-      <a class="group-title" href="https://martinocando.com/blog">Blog</a>
-      <a href="https://martinocando.com/yosemite">Yosemite log</a>
-      <a href="https://martinocando.com/my-switch-story">My switch story</a>
-      <a href="https://martinocando.com/switch-ii">Switch II</a>
-      <a href="https://martinocando.com/switch-iii">Switch III</a>
-      <a href="https://martinocando.com/learning-from-mistakes">Learning from Mistakes</a>
+      <a class="group-title" href="https://blog.martinocando.com/">Blog</a>
+      <a href="https://blog.martinocando.com/yosemite">Yosemite log</a>
+      <a href="https://blog.martinocando.com/my-switch-story">My switch story</a>
+      <a href="https://blog.martinocando.com/switch-ii">Switch II</a>
+      <a href="https://blog.martinocando.com/switch-iii">Switch III</a>
+      <a href="https://blog.martinocando.com/learning-from-mistakes">Learning from Mistakes</a>
     </div>
     <div class="group">
       <a href="https://martinocando.com/contact">Contact</a>
