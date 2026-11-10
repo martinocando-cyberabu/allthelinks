@@ -95,9 +95,9 @@
   @media (hover: none) { .anchor { opacity: .6; } }
   .anchor.copied { color: var(--accent); opacity: 1; }
 
-  ul.items { list-style: none; margin: 0; padding: 0; }
-  ul.items > li { margin: 0 0 16px; padding-left: 0; }
-  ul.items > li::before { content: "- "; }
+ ul.items { list-style: disc; margin: 0; padding-left: 22px; }
+ ul.items > li { margin: 0 0 16px; padding-left: 4px; }
+ ul.items > li::marker { color: var(--heading); }
   .name { color: var(--text); }
   .stores a + a::before { content: " - "; color: var(--text); font-weight: 400; }
   .note { font-style: italic; }
